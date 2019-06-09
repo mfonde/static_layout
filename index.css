@@ -1,7 +1,15 @@
 .wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1260px;
+    background-color: black;
+    border: none;
+}
+
+.backgroundImage{
     background-image: url("../static_layout/assets/netflix_background.jpg");
     background-color: darkred;
-    height: 520px;
+    height: 535px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,10 +19,10 @@
     margin: 0px;
 }
 
-.container{
+.containerBackgroundImage{
     display: grid;
     grid-template-columns: [leftCol] 20% [midCol] 60% [rightCol] 20%  [endCol];
-    grid-template-rows: [rowOne] 100px [rowTwo] 60px [rowThree] 110px [rowFour] 120px [rowFive] auto [endRow];
+    grid-template-rows: [rowOne] 100px [rowTwo] 60px [rowThree] 110px [rowFour] 130px [rowFive] 150px [endRow];
     grid-row-gap: 0px;
     grid-column-gap: 0px;
 }
@@ -24,6 +32,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: red;
     font-size: 50px;
+    text-decoration: none;
     grid-column-start: midCol;
     grid-column-end: rightCol;
     grid-row-start: rowOne;
@@ -74,7 +83,7 @@
     justify-self: center;
 }
 
-#watchAnywhere{
+#watchAnywhereBackgroundImage{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     font-size: 33px;
@@ -86,7 +95,7 @@
     justify-self: center;
 }
 
-#restartMembership{
+#restartMembershipBackgroundImage{
     background-color: red;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -99,16 +108,144 @@
     grid-column-end: rightCol;
     grid-row-start: rowFive;
     grid-row-end: endRow;
-    align-self: center;
+    align-self: start;
     justify-self: center;
 }
 
-.navBar{
-    width: 100%;
-    height: 200px;
+.midBar{
+    height: 150px;
+    margin: none;
+    background-color: rgb(19, 18, 18);
+    background-size: cover;
+    border-bottom: 2px solid rgb(54, 54, 54);
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    box-align: center;
+}
+
+.containerMidBar{
+    display: grid;
+    grid-template-columns: [firstColLine] 33.3% [secondColLine] 33.4% [thirdColLine] 33.3% [endColLine];
+    grid-template-rows: [startRowLine] 150px [endRowLine];
+}
+
+#noCommitments{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 0px 29px 200px;
+    grid-column-start: firstColLine;
+    grid-column-end: secondColLine;
+    grid-row-start: startRowLine;
+    grid-row-end: endRowLine;
+    align-self: end;
+    justify-self: center;
+}
+
+#watchAnywhereMidBar{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 0px 51px 0px;
+    grid-column-start: secondColLine;
+    grid-column-end: thirdColLine;
+    grid-row-start: startRowLine;
+    grid-row-end: endRowLine;
+    align-self: end;
+    justify-self: center;
+}
+
+#pickYourPrice{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0px 200px 51px 0px;
+    grid-column-start: thirdColLine;
+    grid-column-end: endColLine;
+    grid-row-start: startRowLine;
+    grid-row-end: endRowLine;
+    align-self: end;
+    justify-self: center;
+}
+
+.bottomThird{
+    height: 535px;
+    margin: none;
     background-color: black;
+    background-size: cover;
     border: none;
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;
+    box-align: center;
+}
+
+.containerBottomThird{
+    display: grid;
+    grid-template-columns: [newColLeft] 17% [leftLine] 33% [centerLine] 33% [rightLine] 17% [newColRight];
+    grid-template-rows: [topLine] 50% [midLine] 50% [bottomLine];
+    row-gap: 25px;
+}
+
+#ifYouDecide{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    text-align: left;
+    padding: 30px 0px 0px 0px;
+    grid-column-start: leftLine;
+    grid-column-end: centerLine;
+    grid-row-start: topLine;
+    grid-row-end: midLine;
+    align-self: end;
+    justify-self: end;
+}
+
+#restartMembershipBottomThird{
+    background-color: red;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 13px 35px 13px 35px;
+    border: 1px solid red;
+    border-radius: 2px;
+    grid-column-start: leftLine;
+    grid-column-end: centerLine;
+    grid-row-start: midLine;
+    grid-row-end: bottomLine;
+    align-self: start;
+    justify-self: start;
+}
+
+#cancelImage{
+    height: 325px;
+    width: 450px;
+    grid-column-start: centerLine;
+    grid-column-end: rightLine;
+    grid-row-start: topLine;
+    grid-row-end: bottomLine;
+    align-self: center;
+    justify-self: start;
+    padding: 35px 0px 0px 0px;
+}
+
+.footer{
+    height: 350px;
+    margin: none;
+    background-color: black;
+    background-size: cover;
+    border: none;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    box-align: center;
 }
